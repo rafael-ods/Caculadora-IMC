@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Calculadora IMC</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/font/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main class="ct-form">
+
+    <form class="form" action="/" method="post">
+
+      <h1 class="form-titulo">Calculadora IMC</h1>
+      <img class="form-img" src="assets/img/Dracula-logo.png" alt="">
+
+      <fieldset class="form-group">
+        <label for="peso" class="form-label">Peso:</label>
+        <input type="text" class="form-input" id="peso">
+      </fieldset>
+
+
+      <fieldset class="form-group">
+        <label for="altura" class="form-label">Altura:</label>
+        <input type="text" class="form-input" id="altura">
+      </fieldset>
+
+      <button class="form-btn" type="submit">Enviar</button>
+
+      <fieldset class="resultado"></fieldset>
+
+    </form>
+  </main>
+  <script src='assets/js/main.js'></script>
+</body>
+
+</html>

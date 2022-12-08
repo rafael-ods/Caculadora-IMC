@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #282a36;
+    --bg-form: #f8f8f2;
+    --green: #50fa7b;
+    --pink: #ff79c6;
+    --yellow: #f1fa8c;
+    --orange: #ffb86c;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--fonte-principal);
+    
+}
+
+.ct-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--pink);
+    background-color: var(--bg-form); 
+    padding: 1.5rem;
+}
+
+
+.form-titulo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bg-color);
+    text-align: center;
+    margin: 10px 0 15px 0;
+}
+
+.form-img {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+}   
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: var(--bg-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.form-input {
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    padding: 8px;
+}
+
+.form-input:focus {
+    border: 2px solid var(--bg-color);
+    background-color: #50fa7b;
+}
+
+.form-btn {
+    color: var(--pink);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    width: 100%;
+    padding: 8px;
+}
+
+
+
+.resultado-positivo, .resultado-negativo {
+    color: black;
+    font-size: 18px;
+    background-color: #50fa7b;
+    padding: 8px;
+}
+
+.resultado-negativo {
+    background-color: #ff79c6;
+}
+
+@media screen and (max-width: 425px) {
+    .form-input {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .form-input {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .form-input {
+        width: auto
+    }
+
+    .resultado-positivo {
+        font-size: 14px;
+    }
+}

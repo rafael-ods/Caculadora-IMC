@@ -31,7 +31,19 @@ body {
     padding: 1.5rem;
 }
 
+.form-dev__link {
+    color: #282a36;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0;
+    text-decoration: none;
+}
 
+form b {
+    color: var(--pink);
+}
 .form-titulo {
     font-size: 24px;
     font-weight: 700;
@@ -39,6 +51,10 @@ body {
     text-align: center;
     margin: 10px 0 15px 0;
 }
+
+
+
+
 
 .form-img {
     align-self: center;
@@ -111,6 +127,10 @@ body {
     }
 }
 @media screen and (max-width: 320px) {
+    .form-dev__link {
+        font-size: 15px;
+    }
+    
     .form-input {
         width: auto
     }
